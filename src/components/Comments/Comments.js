@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import '../../styles/Comments.css';
+import plusImg from '../../assets/plus.png';
+import minusImg from '../../assets/minus.png';
 
 const Comments = ({ comment }) => {
     const [commentCount, setCommentCount] = useState(1);
@@ -28,10 +30,10 @@ const Comments = ({ comment }) => {
             ))}
             <div className='buttons-container'>
                 {commentCount >= 1 && (
-                    <button onClick={showMore}><img src='/plus.png'/></button>
+                    <button onClick={showMore}><img src={plusImg}/></button>
                 )}
                 {commentCount >= 2 && (
-                    <button onClick={showLess}><img src='/minus.png'/></button>
+                    <button onClick={showLess}><img src={minusImg}/></button>
                 )}
             </div>
     </div>
