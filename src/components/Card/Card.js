@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../styles/Card.css';
 import { NavLink } from 'react-router-dom';
+import Vote from '../Vote/Vote';
 
 const Card = ({ data, children }) => {
     return (
@@ -23,6 +24,7 @@ const Card = ({ data, children }) => {
                     )}
             </div>
             <div className='features'>
+                <Vote score={data.score}/>
                 <div className='comments'>
                     <NavLink className='nav-link' to={`/post/${data.id}`}>
                         <button>
