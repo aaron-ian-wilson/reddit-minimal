@@ -28,7 +28,7 @@ const Card = ({ data, children }) => {
                 <div className='comments'>
                     <NavLink className='nav-link' to={`/post/${data.id}`}>
                         <button>
-                            <img src='/comment.png' alt='comment'/>
+                            <img src='/comment.png' alt='comment'/>{data.num_comments}
                         </button>
                     </NavLink>
                 </div>
