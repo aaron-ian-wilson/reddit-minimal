@@ -2,6 +2,8 @@ import React from 'react';
 import '../../styles/Card.css';
 import { NavLink } from 'react-router-dom';
 import Vote from '../Vote/Vote';
+import commentImg from '../../assets/comment.png';
+import { convertToDecimal, getTimeAgo } from '../../utils/format';
 
 const Card = ({ data, children }) => {
     return (
@@ -28,7 +30,7 @@ const Card = ({ data, children }) => {
                 <div className='comments'>
                     <NavLink className='nav-link' to={`/post/${data.id}`}>
                         <button>
-                            <img src='/comment.png' alt='comment'/>{data.num_comments}
+                            <img src={commentImg} alt='comment'/>{convertToDecimal(data.num_comments)}
                         </button>
                     </NavLink>
                 </div>
@@ -36,7 +38,7 @@ const Card = ({ data, children }) => {
                     <p>Posted By <span className='highlight'>{data.author}</span></p>
                 </div>
                 <div className='date'>
-                    <p></p>
+                    <p>{getTimeAgo(data.created_utc)}</p>
                 </div>
             </div>
             {children}
