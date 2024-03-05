@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { popular, comments, search, topics } from '../actions/';
 
-const reddit = createSlice({
+const redditSlice = createSlice({
     name: 'reddit',
     initialState: {
         posts: [],
@@ -10,34 +11,63 @@ const reddit = createSlice({
     },
     reducers: {},
     extraReducers: (builder) => {
-        builder
-          .addMatcher(
-            (action) => action.type.endsWith('/pending'),
-            (state) => {
-              state.status = 'pending';
-              state.error = false;
-            }
-          )
-          .addMatcher(
-            (action) => action.type.endsWith('/fulfilled'),
-            (state, action) => {
-              state.status = 'fulfilled';
-              state.posts = action.payload;
-              state.comments = action.payload;
-              state.error = false
-            }
-          )
-          .addMatcher(
-            (action) => action.type.endsWith('/rejected'),
-            (state) => {
-              state.status = 'rejected';
-              state.error = true;
-            }
-          );
-      },
+      builder
+      .addCase(popular.pending, (state) => {
+          state.status = 'pending';
+          state.error = false;
+      }) 
+      .addCase(popular.fulfilled, (state, action) => {
+          state.status = 'fulfilled';
+          state.posts = action.payload;
+          state.error = false;
+      })
+      .addCase(popularPosts.rejected, (state) => {
+          state.status = 'rejected';
+          state.error = true;
+      })
+      .addCase(search.pending, (state) => {
+          state.status = 'pending';
+          state.error = false;
+      })
+      .addCase(search.fulfilled, (state, action) => {
+          state.status = 'fulfilled';
+          state.posts = action.payload;
+          state.error = false;
+      })
+      .addCase(search.rejected, (state) => {
+          state.status = 'rejected'
+          state.error = true;
+      })
+      .addCase(comments.pending, (state) => {
+          state.status = 'pending';
+          state.error = false;
+      }) 
+      .addCase(comments.fulfilled, (state, action) => {
+          state.status = 'fulfilled';
+          state.comments = action.payload;
+          state.error = false;
+      })
+      .addCase(comments.rejected, (state) => {
+          state.status = 'rejected';
+          state.error = true;
+      })
+      .addCase(topics.pending, (state) => {
+          state.status = 'pending';
+          state.error = false;
+      }) 
+      .addCase(topics.fulfilled, (state, action) => {
+          state.status = 'fulfilled';
+          state.posts = action.payload;
+          state.error = false;
+      })
+      .addCase(topics.rejected, (state) => {
+          state.status = 'rejected';
+          state.error = true;
+      })
+  },
 });
 
-export default reddit.reducer;
+export default redditSlice.reducer;
 
 export const selectPosts = (state) => state.reddit.posts;
 export const selectComments = (state) => state.reddit.comments;
