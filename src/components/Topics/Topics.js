@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import './Topics.css';
+import '../../styles/Topics.css';
 import { NavLink, createSearchParams, useNavigate } from 'react-router-dom';
 
 const Topics = () => {
