@@ -30,7 +30,8 @@
 
 .temp {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   width: 100%;
   margin: 0;
@@ -42,11 +43,19 @@
   z-index: 2;
 }
 
-.temp button {
+.temp span {
+  margin: 0 auto;
+}
+
+.close {
+  display: flex;
+}
+
+.close button {
   border: none;
 }
 
-.temp button:hover {
+.close button:hover {
   background-color: rgb(225, 225, 225
   );
 }
