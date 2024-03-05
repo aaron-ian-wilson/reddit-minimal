@@ -1,5 +1,7 @@
 import React from 'react';
 import '../styles/Home.css';
+import Search from '../components/Search/Search';
+import CardList from '../components/CardList/CardList';
 
 const Home = () => {
     return (
@@ -8,7 +10,8 @@ const Home = () => {
 
             </div>
             <div className='content'>
-
+                <Search/>
+                <CardList/>
             </div>
             <div className='sidebar-right'>
 
