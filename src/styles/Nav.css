@@ -1,4 +1,4 @@
-.nav-bar {
+.nav {
     background-color: white;
     height: 70px;
     width: 100%;
@@ -12,7 +12,7 @@
     z-index: 2;
   }
   
-  .nav-bar img {
+  .nav img {
     height: 48px;
     width: 48px;
     margin-bottom: 8px;
@@ -23,12 +23,12 @@
   }
 
   @media only screen and (max-width: 1050px) {
-    .nav-bar {
+    .nav {
         height: 50px;
         font-size: 1rem;
     }
 
-    .nav-bar img {
+    .nav img {
         height: 36px;
         width: 36px;
         margin-bottom: 6px;
