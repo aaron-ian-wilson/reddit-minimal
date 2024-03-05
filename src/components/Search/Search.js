@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import '../../styles/Search.css';
 import { useNavigate, createSearchParams } from 'react-router-dom';
 
-const SearchBar = () => {
+const Search = () => {
     const navigate = useNavigate();
     const searchInputRef = useRef();
 
@@ -42,4 +42,4 @@ const SearchBar = () => {
       );
 };
 
-export default SearchBar;
+export default Search;
