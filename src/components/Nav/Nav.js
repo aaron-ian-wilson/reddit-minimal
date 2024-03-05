@@ -4,7 +4,7 @@ import redditImg from '../../assets/reddit-logo.png';
 
 const Nav = () => {
     return (
-        <div>
+        <div className='container'>
 
         <div className='temp'>
             <span>Currently under construction 🚧</span>
