@@ -7,7 +7,7 @@ import volleyballImg from '../../assets/volleyball.png';
 import handshakeImg from '../../assets/handshake.png';
 import bitcoinImg from '../../assets/bitcoin.png';
 import televisionImg from '../../assets/television.png';
-import revealImg from '../../assets/down-arrow.png';
+import revealImg from '../../assets/reveal.png';
 
 const Topics = () => {
     const [isVisible, setIsVisible] = useState({
