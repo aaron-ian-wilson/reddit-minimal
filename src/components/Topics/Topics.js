@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import '../../styles/Topics.css';
 import { NavLink, createSearchParams, useNavigate } from 'react-router-dom';
 import popularImg from '../../assets/popular.png';
