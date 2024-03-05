@@ -4,7 +4,7 @@ import { Card } from '../Card/Card';
 import { selectPosts } from '../../slices/reddit';
 import { popular } from '../../actions/popular-posts';
 
-export const CardList = () => {
+const CardList = () => {
     const posts = useSelector(selectPosts);
     const dispatch = useDispatch();
 
@@ -18,4 +18,6 @@ export const CardList = () => {
         </div>
     );
 };
+
+export default CardList;
 
