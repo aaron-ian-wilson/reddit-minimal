@@ -17,7 +17,7 @@ const TopicsPage = () => {
     
     useEffect(() => {
         dispatch(topics(query));
-    }, [dispatch]);
+    }, [dispatch, query]);
 
     return (
         <div className="body">
