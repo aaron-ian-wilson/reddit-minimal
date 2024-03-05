@@ -1,16 +1,16 @@
 import Root from '../../routes/Root';
-import Home from '../../routes/HomePage';
-import Post from '../../routes/PostPage';
-import Search from '../../routes/SearchPage';
-import Topics from '../../routes/TopicsPage';
+import HomePage from '../../routes/HomePage';
+import PostPage from '../../routes/PostPage';
+import SearchPage from '../../routes/SearchPage';
+import TopicsPage from '../../routes/TopicsPage';
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 
 const router = createBrowserRouter(createRoutesFromElements(
     <Route path='/' element={ <Root/> }>
-        <Route index element={ <Home/> }/>
-        <Route path='/post/:id' element={ <Post/> }/>
-        <Route path='/search' element={ <Search/> }/>
-        <Route path='/topic' element={ <Topics/> }/>
+        <Route index element={ <HomePage/> }/>
+        <Route path='/post/:id' element={ <PostPage/> }/>
+        <Route path='/search' element={ <SearchPage/> }/>
+        <Route path='/topic' element={ <TopicsPage/> }/>
     </Route>
 ));
 
