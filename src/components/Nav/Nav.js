@@ -17,7 +17,9 @@ const Nav = () => {
 
         <div className='temp'>
             <span>Currently under construction 🚧</span>
-            <button onClick={handleClick}>X</button>
+            <div className='close'>
+                <button onClick={handleClick}>X</button>
+            </div>
         </div>
         <div className='nav'>
             <h1>Reddit<span className='highlight'>Minimal</span></h1>
