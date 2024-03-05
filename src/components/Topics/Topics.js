@@ -6,7 +6,6 @@ import controllerImg from '../../assets/controller.png';
 import volleyballImg from '../../assets/volleyball.png';
 import handshakeImg from '../../assets/handshake.png';
 import bitcoinImg from '../../assets/bitcoin.png';
-import televisionImg from '../../assets/television.png';
 import revealImg from '../../assets/reveal.png';
 
 const Topics = () => {
