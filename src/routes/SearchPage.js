@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import '../styles/Search.css';
 import { useDispatch, useSelector } from 'react-redux';
 import Topics from '../components/Topics/Topics';
 import Search from '../components/Search/Search';
