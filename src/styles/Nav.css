@@ -1,0 +1,36 @@
+.nav-bar {
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+    gap: 7.5px;
+    z-index: 2;
+  }
+  
+  .nav-bar img {
+    height: 48px;
+    width: 48px;
+    margin-bottom: 8px;
+  }
+  
+  .highlight {
+    color: rgb(0, 157, 255);
+  }
+
+  @media only screen and (max-width: 1050px) {
+    .nav-bar {
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .nav-bar img {
+        height: 36px;
+        width: 36px;
+        margin-bottom: 6px;
+    }
+}
