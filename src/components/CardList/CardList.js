@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Card } from '../Card/Card';
+import Card from '../Card/Card';
 import { selectPosts } from '../../slices/reddit';
 import { popular } from '../../actions/popular-posts';
 
