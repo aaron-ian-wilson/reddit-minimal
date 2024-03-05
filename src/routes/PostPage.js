@@ -11,7 +11,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 const PostPage = () => {
     const post = useSelector(selectPosts);
-    const comment = useSelector(selectComments);
+    const comments = useSelector(selectComments);
     const status = useSelector(selectStatus);
     
     const { id } = useParams();
@@ -21,7 +21,7 @@ const PostPage = () => {
 
     useEffect(() => {
         dispatch(comments({id: data.id, subreddit: data.subreddit}));
-    }, [dispatch]);
+    }, [dispatch, data]);
 
     return (
         <div className="body">
@@ -41,7 +41,7 @@ const PostPage = () => {
                         Failed to load . . .
                     </div>
                 )}
-                <Comments comment={comment}/>
+                <Comments comment={comments}/>
             </Card>
         </div>
         <div id="sidebar-2">
