@@ -24,7 +24,7 @@ const Search = () => {
     };
 
     const goBackHandler = () => {
-        navigate(-1);
+        navigate('/');
     }
 
     return (
