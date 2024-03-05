@@ -23,7 +23,7 @@ const SearchPage = () => {
 
     return (
         <div className="body">
-        <div className="sidebar-1">
+        <div className="sidebar-left">
             <Topics />
         </div>
         <div className="content">
@@ -40,7 +40,7 @@ const SearchPage = () => {
             )}
             {post.map((data, index) => <Card key={index} data={data}/>)}
         </div>
-        <div className="sidebar-2">
+        <div className="sidebar-right">
             
         </div>
     </div>

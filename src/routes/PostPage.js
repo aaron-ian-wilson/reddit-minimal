@@ -25,10 +25,10 @@ const PostPage = () => {
 
     return (
         <div className="body">
-        <div id="sidebar-1">
+        <div className="sidebar-left">
             <Topics />
         </div>
-        <div id="content">
+        <div className="content">
             <Search />
             <Card data={data}>
                 {status === 'pending' && (
@@ -44,7 +44,7 @@ const PostPage = () => {
                 <Comments comment={comments}/>
             </Card>
         </div>
-        <div id="sidebar-2">
+        <div className="sidebar-right">
             
         </div>
     </div>
