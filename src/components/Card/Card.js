@@ -26,7 +26,7 @@ const Card = ({ data, children }) => {
                     )}
             </div>
             <div className='features'>
-                <Vote score={data.score}/>
+                <Vote score={convertToDecimal(data.score)}/>
                 <div className='comments'>
                     <NavLink className='nav-link' to={`/post/${data.id}`}>
                         <button>
