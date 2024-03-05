@@ -1,6 +1,13 @@
 import React, { useState, useRef } from 'react';
 import '../../styles/Topics.css';
 import { NavLink, createSearchParams, useNavigate } from 'react-router-dom';
+import popularImg from '../../assets/popular.png';
+import controllerImg from '../../assets/controller.png';
+import volleyballImg from '../../assets/volleyball.png';
+import handshakeImg from '../../assets/handshake.png';
+import bitcoinImg from '../../assets/bitcoin.png';
+import televisionImg from '../../assets/television.png';
+import revealImg from '../../assets/down-arrow.png';
 
 const Topics = () => {
     const [isVisible, setIsVisible] = useState({
@@ -43,16 +50,16 @@ const Topics = () => {
     return (
         <div className='topics-container'>
             <div className='popular'>
-                <NavLink className='nav' to='/'><button className='head-button'><img src='/popular.png' alt='popular'/>Popular</button></NavLink>
+                <NavLink className='nav' to='/'><button className='head-button'><img src={popularImg} alt='popular'/>Popular</button></NavLink>
             </div>
             <div className='topics'>
                 <div className='header'>
                     Topics
                 </div>
                 <div className='gaming'>
-                    <button className='head-button' onClick={() => handleClick('gaming')}><img src='/controller.png' alt='controller'/>Gaming
+                    <button className='head-button' onClick={() => handleClick('gaming')}><img src={controllerImg} alt='controller'/>Gaming
                         <div className='reveal'>
-                            <img src='/reveal.png' alt='reveal'/>
+                            <img src={revealImg} alt='reveal'/>
                         </div>
                     </button>
                     {isVisible.gaming && (
@@ -73,9 +80,9 @@ const Topics = () => {
                     )}
                 </div>
                 <div className='sports'>
-                    <button className='head-button' onClick={() => handleClick('sports')}><img src='/volleyball.png' alt='volleyball'/>Sports
+                    <button className='head-button' onClick={() => handleClick('sports')}><img src={volleyballImg} alt='volleyball'/>Sports
                         <div className='reveal'>
-                            <img src='/reveal.png' alt='reveal'/>
+                            <img src={revealImg} alt='reveal'/>
                         </div>
                     </button>
                     {isVisible.sports && (
@@ -96,9 +103,9 @@ const Topics = () => {
                     )}
                 </div>
                 <div className='business'>
-                    <button className='head-button' onClick={() => handleClick('business')}><img src='/handshake.png' alt='handshake'/>Business
+                    <button className='head-button' onClick={() => handleClick('business')}><img src={handshakeImg} alt='handshake'/>Business
                         <div className='reveal'>
-                            <img src='/reveal.png' alt='reveal'/>
+                            <img src={revealImg} alt='reveal'/>
                         </div>
                     </button>
                     {isVisible.business && (
@@ -119,9 +126,9 @@ const Topics = () => {
                     )}
                 </div>
                 <div className='crypto'>
-                    <button className='head-button' onClick={() => handleClick('crypto')}><img src='/bitcoin.png' alt='crypto bitcoin'/>Crypto
+                    <button className='head-button' onClick={() => handleClick('crypto')}><img src={bitcoinImg} alt='crypto bitcoin'/>Crypto
                         <div className='reveal'>
-                            <img src='/reveal.png' alt='reveal'/>
+                            <img src={revealImg} alt='reveal'/>
                         </div>
                     </button>
                     {isVisible.crypto && (
