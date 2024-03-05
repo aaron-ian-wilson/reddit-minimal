@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Home.css';
 import Search from '../components/Search/Search';
 import CardList from '../components/CardList/CardList';
 import Topics from '../components/Topics/Topics';
