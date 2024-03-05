@@ -48,8 +48,8 @@ const Topics = () => {
 
     return (
         <div className='topics-container'>
-            <div className='popular'>
-                <NavLink className='nav' to='/'><button className='head-button'><img src={popularImg} alt='popular'/>Popular</button></NavLink>
+            <div className='home'>
+                <NavLink className='nav-link' to='/'><button className='head-button'><img src={popularImg} alt='popular'/>Popular</button></NavLink>
             </div>
             <div className='topics'>
                 <div className='header'>
