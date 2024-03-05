@@ -1,0 +1,18 @@
+.votes {
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+}
+
+.votes img {
+    height: 16px;
+    width: 16px;
+}
+
+.votes > * {
+    display: flex;
+    padding: 10px;
+}
