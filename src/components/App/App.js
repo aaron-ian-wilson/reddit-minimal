@@ -3,6 +3,7 @@ import HomePage from '../../routes/HomePage';
 import PostPage from '../../routes/PostPage';
 import SearchPage from '../../routes/SearchPage';
 import TopicsPage from '../../routes/TopicsPage';
+import '../../styles/App.css';
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 
 const router = createBrowserRouter(createRoutesFromElements(
