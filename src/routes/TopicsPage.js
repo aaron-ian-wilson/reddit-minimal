@@ -7,7 +7,7 @@ import { useSearchParams } from 'react-router-dom';
 import { selectPosts } from '../slices/reddit';
 import { topics } from '../actions/topics';
 
-const Topics = () => {
+const TopicsPage = () => {
     const post = useSelector(selectPosts);
 
     const [searchParams] = useSearchParams();
@@ -35,4 +35,4 @@ const Topics = () => {
     );
 };
 
-export default Topics;
+export default TopicsPage;

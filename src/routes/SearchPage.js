@@ -8,7 +8,7 @@ import { search } from '../actions/search-posts';
 import { selectPosts, selectStatus } from '../slices/reddit';
 import { useSearchParams } from 'react-router-dom';
 
-const Search = () => {
+const SearchPage = () => {
     const post = useSelector(selectPosts);
     const status = useSelector(selectStatus);
 
@@ -48,4 +48,4 @@ const Search = () => {
     );
 };
 
-export default Search;
+export default SearchPage;

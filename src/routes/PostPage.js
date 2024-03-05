@@ -9,7 +9,7 @@ import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 
 
-const Post = () => {
+const PostPage = () => {
     const post = useSelector(selectPosts);
     const comment = useSelector(selectComments);
     const status = useSelector(selectStatus);
@@ -52,4 +52,4 @@ const Post = () => {
     );
 };
 
-export default Post;
+export default PostPage;

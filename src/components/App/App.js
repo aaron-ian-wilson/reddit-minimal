@@ -1,8 +1,8 @@
 import Root from '../../routes/Root';
-import Home from '../../routes/Home';
-import Post from '../../routes/Post';
-import Search from '../../routes/Search';
-import Topics from '../../routes/Topics';
+import Home from '../../routes/HomePage';
+import Post from '../../routes/PostPage';
+import Search from '../../routes/SearchPage';
+import Topics from '../../routes/TopicsPage';
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 
 const router = createBrowserRouter(createRoutesFromElements(

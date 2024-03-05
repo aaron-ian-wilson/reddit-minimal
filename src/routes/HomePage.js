@@ -4,7 +4,7 @@ import Search from '../components/Search/Search';
 import CardList from '../components/CardList/CardList';
 import Topics from '../components/Topics/Topics';
 
-const Home = () => {
+const HomePage = () => {
     return (
         <div className='body'>
             <div className='sidebar-left'>
@@ -21,4 +21,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default HomePage;
