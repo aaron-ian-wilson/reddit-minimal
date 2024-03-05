@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import '../../styles/Search.css';
 import { useNavigate, createSearchParams } from 'react-router-dom';
 
 const SearchBar = () => {
