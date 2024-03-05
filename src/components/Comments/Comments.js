@@ -30,10 +30,10 @@ const Comments = ({ comment }) => {
             ))}
             <div className='buttons-container'>
                 {commentCount >= 1 && (
-                    <button onClick={showMore}><img src={plusImg}/></button>
+                    <button onClick={showMore}><img src={plusImg} alt='show more'/></button>
                 )}
                 {commentCount >= 2 && (
-                    <button onClick={showLess}><img src={minusImg}/></button>
+                    <button onClick={showLess}><img src={minusImg} alt='show less'/></button>
                 )}
             </div>
     </div>
