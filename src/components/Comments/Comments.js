@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../../styles/Comments.css';
 
 const Comments = ({ comment }) => {
     const [commentCount, setCommentCount] = useState(1);
