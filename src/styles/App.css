@@ -13,7 +13,9 @@
 }
   
 .sidebar-left, .sidebar-right {
-  width: 25%;
+  width: 20%;
+  max-width: 20%;
+  min-width: 20%;
   background-color: whitesmoke;
 }
   
