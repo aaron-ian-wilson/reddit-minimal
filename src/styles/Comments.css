@@ -1,0 +1,32 @@
+.comment-list {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.comment-list button {
+    border-radius: 25px;
+    border: none;
+    padding: 8px;
+}
+
+.comment-list button:hover {
+    background-color: rgb(225, 225, 225);
+    cursor: pointer;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+/* We indent replies to give a nested effect for a more friendly user experience */
+.reply {
+    margin-left: 20px;
+    border-left: 1px solid rgb(0, 0, 0, 0.3);
+    padding-left: 10px;
+}
