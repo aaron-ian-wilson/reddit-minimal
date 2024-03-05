@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "../components/Nav/Nav";
+import { Outlet } from "react-router-dom";
 
 const Root = () => {
     return (
@@ -10,7 +11,7 @@ const Root = () => {
 
             </div>
             <div className="content">
-                
+                <Outlet/>
             </div>
             <div className="sidebar-right">
 
