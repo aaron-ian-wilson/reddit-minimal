@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const reddit = createSlice({
     name: 'reddit',
-    state: {
+    initialState: {
         posts: [],
         comments: [],
         status: 'idle',
