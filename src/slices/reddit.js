@@ -1,5 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { popular, comments, search, topics } from '../actions/';
+import { popular } from '../actions/popular-posts';
+import { search } from '../actions/search-posts';
+import { comments } from '../actions/post-comments';
+import { topics } from '../actions/topics';
 
 const redditSlice = createSlice({
     name: 'reddit',
@@ -21,7 +24,7 @@ const redditSlice = createSlice({
           state.posts = action.payload;
           state.error = false;
       })
-      .addCase(popularPosts.rejected, (state) => {
+      .addCase(popular.rejected, (state) => {
           state.status = 'rejected';
           state.error = true;
       })
@@ -72,3 +75,5 @@ export default redditSlice.reducer;
 export const selectPosts = (state) => state.reddit.posts;
 export const selectComments = (state) => state.reddit.comments;
 export const selectStatus = (state) => state.reddit.status;
+
+export { popular, search, comments, topics};
