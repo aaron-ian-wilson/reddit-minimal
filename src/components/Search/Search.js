@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import '../../styles/Search.css';
 import { useNavigate, createSearchParams } from 'react-router-dom';
+import backImg from '../../assets/back.png'
+import searchImg from '../../assets/search-interface-symbol.png';
 
 const Search = () => {
     const navigate = useNavigate();
@@ -30,11 +32,11 @@ const Search = () => {
           <form onSubmit={onSearchHandler} className='search-form'>
             <div className='search-bar-container'>
                 <button onClick={goBackHandler} className='search-button'>
-                    <img src='/back.png' alt='go back'/>
+                    <img src={backImg} alt='go back'/>
                 </button>
                 <input type='text' placeholder='Search' ref={searchInputRef} className='search-input' />
                 <button type='submit' className='search-button'>
-                    <img src='/search-interface-symbol.png' alt='search' />
+                    <img src={searchImg} alt='search' />
                 </button>
             </div>
           </form>
