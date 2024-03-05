@@ -1,0 +1,68 @@
+.topics-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 250px;
+    margin: 100px 2px 0px auto;
+}
+
+.gaming,
+.sports,
+.business,
+.crypto {
+    border-bottom: 1px solid rgb(0, 0, 0, 0.5);
+    padding: 5px 0px;
+}
+
+.topics .header {
+    border: 0px !important;
+    opacity: 80%;
+    margin-bottom: 10px;
+}
+
+.head-button {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 10px;
+    font-size: 1.05rem;
+    width: 250px;
+}
+
+.sub-topics button {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 10px;
+    font-size: 1.05rem;
+    margin-left: 15px;
+    border-left: 1px solid rgb(0, 0, 0, 0.5);
+    width: 235px;
+}
+
+.topics-container img {
+    padding-right: 10px;
+}
+
+.topics-container button:hover {
+    background-color: white;
+}
+
+.popular {
+    border-bottom: 1px solid rgb(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    padding: 5px 0px;
+}
+
+.nav {
+    text-decoration: none;
+    color: black;
+}
+
+.reveal {
+    display: flex;
+    justify-content: end;
+    width: 200px;
+}
