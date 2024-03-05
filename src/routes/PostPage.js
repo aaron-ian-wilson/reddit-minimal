@@ -17,7 +17,6 @@ const PostPage = () => {
     const { id } = useParams();
     const data = post.find(post => post.id === id);
 
-
     const dispatch = useDispatch();
 
     useEffect(() => {
