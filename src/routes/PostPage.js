@@ -21,7 +21,7 @@ const PostPage = () => {
 
     useEffect(() => {
         dispatch(_comments({id: data.id, subreddit: data.subreddit}));
-    }, [dispatch, comments, data]);
+    }, [dispatch]);
 
     return (
         <div className="body">
