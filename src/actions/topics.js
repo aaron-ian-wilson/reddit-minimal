@@ -3,7 +3,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 export const topics = createAsyncThunk(
     'reddit/topics',
     async (topic) => {
-        const response = await fetch(`https://www.reddit.com/r/${topic}.json?limit=10`); // '/r/' is temporary until we can fetch topics from reddits API
+        const response = await fetch(`https://www.reddit.com/search.json?limit=10&q=title:${topic}`); // Temporary
         const json = await response.json();
 
         return json.data.children.map(post => ({
