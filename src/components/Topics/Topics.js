@@ -65,7 +65,7 @@ const Topics = () => {
                         <form onSubmit={topicHandler}>
                             <div className='sub-topics'>
                                 <button onClick={() => selectSubtopic('Valheim')}>Valheim</button>
-                                <button onClick={() => selectSubtopic('GenshinImpact')}>Genshin Impact</button>
+                                <button onClick={() => selectSubtopic('Genshin Impact')}>Genshin Impact</button>
                                 <button onClick={() => selectSubtopic('Minecraft')}>Minecraft</button>
                                 <button onClick={() => selectSubtopic('Pokimane')}>Pokimane</button>
                                 <button onClick={() => selectSubtopic('Halo Infinite')}>Halo Infinite</button>
