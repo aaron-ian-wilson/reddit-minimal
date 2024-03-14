@@ -1,9 +1,6 @@
 # Description
 Welcome! <a href='https://aiw-reddit-minimal.netlify.app' target='_blank'>Reddit Minimal</a> is a web application designed to access and interact with Reddit, a popular social news aggregation, web content rating, and discussion website. Reddit Minimal allows users to browse various communities (subreddits), view posts, comments, and media content such as images, videos, and links.
 
-<img src='https://github.com/aaron-ian-wilson/reddit-minimal/blob/main/src/assets/reddit-minimal-home.png' alt='Reddit Minimal Home Page Desktop' width='750px' height='auto'/>
-<img src='https://github.com/aaron-ian-wilson/reddit-minimal/blob/main/src/assets/reddit-minimal-home-iphone-se.png' alt='Reddit Minimal Home Page Ipone SE' height='450px' width='auto'/>
-
 # Technologies
 - HTML
 - CSS
